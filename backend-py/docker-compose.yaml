@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  backend:
+    image: public.ecr.aws/t9g4g7y2/event-streamer:latest
+    platform: linux/amd64
+    volumes:
+      - .:/app
+    ports:
+      - "9745:9745"
